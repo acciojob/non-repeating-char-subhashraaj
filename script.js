@@ -1,11 +1,11 @@
 function firstNonRepeatedChar(str) {
 	const charCount = {};
-    for (const char of inputString) {
-        charCount[char] = (charCount[char] || 0) + 1;
+    for (const str of inputString) {
+        charCount[str] = (charCount[str] || 0) + 1;
     }
-    for (const char of inputString) {
-        if (charCount[char] === 1) {
-            return char;
+    for (const str of inputString) {
+        if (charCount[str] === 1) {
+            return str;
         }
     }
     return null;
